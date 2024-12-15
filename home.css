@@ -202,10 +202,12 @@ header nav ul li a.btn:hover {
 }
 .services .service-item h2{
     border-radius: 5px;
+    box-shadow: #000;
     background-color: #cdd0d4;
 }
 .services .service-item p{
     border-radius: 5px;
+    box-shadow: #000;
     background-color: #d4d6d9;
 }
 .services #img1{
