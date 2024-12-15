@@ -15,3 +15,14 @@ document.querySelectorAll('.faq-header').forEach(header => {
         }
     });
 });
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  currentIndex = (currentIndex + direction + totalItems) % totalItems;
+  
+  const carousel = document.querySelector('.carousel');
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
