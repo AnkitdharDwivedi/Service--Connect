@@ -120,7 +120,7 @@ header nav ul li a.btn:hover {
 
 .services .service-list {
     display: flex;
-    flex-wrap: wrap;
+    
     gap: 20px;
     justify-content: center;
 }
@@ -132,6 +132,26 @@ header nav ul li a.btn:hover {
     flex: 1 1 calc(25% - 20px);
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.services #img1{
+    background-image: url('labour.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img2{
+    background-image: url('cookingservice.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img3{
+    background-image: url('cleaning.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img4{
+    background-image: url('security.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .services .service-item h3 {
