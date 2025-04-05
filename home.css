@@ -189,6 +189,9 @@ header nav ul li a.btn:hover {
     gap: 20px;
     justify-content: center;
 }
+.services .service-list:hover{
+    background-image: none;
+}
 
 .services .service-item {
     background: #f3f4f6;
@@ -197,18 +200,20 @@ header nav ul li a.btn:hover {
     flex: 1 1 calc(25% - 20px);
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
       color: black;
    
 }
 .services .service-item h2{
     border-radius: 5px;
     box-shadow: #000;
-    background-color: #cdd0d4;
+    
+    
 }
 .services .service-item p{
     border-radius: 5px;
-    box-shadow: #000;
-    background-color: #d4d6d9;
+   color: black;
+  
 }
 .services #img1{
     background-image: url('labour.jpeg');

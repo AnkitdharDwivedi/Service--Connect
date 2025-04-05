@@ -124,3 +124,6 @@ button:hover {
         transform: translateY(0);
     }
 }
+.hidden {
+    display: none;
+}
