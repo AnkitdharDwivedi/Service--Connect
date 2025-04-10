@@ -176,6 +176,7 @@ header nav ul li a.btn:hover {
 .services{
     background: linear-gradient(135deg,#007BFF,#56ab2f );
     border: 2px solid white;
+    opacity: 0.7;
 }
 .contact{
     background: linear-gradient(135deg,#56ab2f, #007BFF );
@@ -188,6 +189,7 @@ header nav ul li a.btn:hover {
     color: white;
     gap: 20px;
     justify-content: center;
+   
 }
 .services .service-list:hover{
     background-image: none;
@@ -216,7 +218,7 @@ header nav ul li a.btn:hover {
   
 }
 .services #img1{
-    background-image: url('labour.jpeg');
+    background-image: url('elctrician.jpeg');
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -224,17 +226,17 @@ header nav ul li a.btn:hover {
     
 }
 .services #img2{
-    background-image: url('cookingservice.jpeg');
+    background-image: url('download.jpeg');
     background-size: cover;
     background-position: center;
 }
 .services #img3{
-    background-image: url('cleaning.jpeg');
+    background-image: url('plumber.jpeg');
     background-size: cover;
     background-position: center;
 }
 .services #img4{
-    background-image: url('security.webp');
+    background-image: url('securitygauard.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -243,6 +245,7 @@ header nav ul li a.btn:hover {
     margin-bottom: 10px;
     font-size: 18px;
     color: #007BFF;
+   
 }
 
 .contact form {

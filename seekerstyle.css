@@ -6,7 +6,7 @@ body {
 /* Header */
 header {
     background-color: pink;
-    color: white;
+    color: black;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
