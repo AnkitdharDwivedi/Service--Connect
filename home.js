@@ -26,3 +26,14 @@ function moveSlide(direction) {
   const carousel = document.querySelector('.carousel');
   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
+let serviceIndex = 0;
+
+function moveServiceSlide(direction) {
+    const items = document.querySelectorAll('.service-carousel .carousel-item');
+    const totalItems = items.length;
+
+    serviceIndex = (serviceIndex + direction + totalItems) % totalItems;
+
+    const carousel = document.querySelector('.service-carousel .carousel');
+    carousel.style.transform = `translateX(-${serviceIndex * 100}%)`;
+}

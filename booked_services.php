@@ -12,7 +12,7 @@ $seeker_id = $_SESSION['user_id'];
 $booked_services = [];
 
 // Updated query to get provider name and phone
-$sql = "SELECT s.id, s.name AS provider_name, s.service_type, s.pincode, s.price, b.booking_date, u.phone AS provider_phone
+$sql = "SELECT s.id, s.name AS provider_name, s.service_type, s.pincode, s.price, b.booking_date, u.phone AS provider_phone, b.status
         FROM bookings b
         JOIN services s ON b.service_id = s.id
         JOIN users u ON s.user_id = u.id
@@ -92,6 +92,7 @@ $conn->close();
                 <th>Price (₹)</th>
                 <th>Booking Date</th>
                 <th>Provider Phone</th>
+                <th>Satus</th>
                 <th>Action</th>
             </tr>
             <?php foreach ($booked_services as $service): ?>
@@ -101,6 +102,7 @@ $conn->close();
                     <td><?php echo htmlspecialchars($service['price']); ?></td>
                     <td><?php echo htmlspecialchars($service['booking_date']); ?></td>
                     <td><?php echo htmlspecialchars($service['provider_phone']); ?></td>
+                    <td><?php echo htmlspecialchars($service['status']); ?></td>
                     <td>
                         <form action="cancel_booking.php" method="POST">
                             <input type="hidden" name="service_id" value="<?php echo $service['id']; ?>">

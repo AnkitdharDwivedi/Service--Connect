@@ -1,8 +1,8 @@
 <?php
 session_start();
-include "server.php"; // Ensure database connection
+include "server.php";
 
-// Ensure only service seekers can access
+
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'service-seeker') {
     header("Location: login.html");
     exit();
@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'service-seeker') {
 
 $services = [];
 
-// Fetch services if form is submitted
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pincode = $_POST['pincode'];
     $service_type = $_POST['service_type'];
@@ -37,19 +37,56 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Seeker Dashboard</title>
     <link rel="stylesheet" href="seekerstyle.css">
+    <style>
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .logout-btn {
+            background-color: red;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .logout-btn:hover {
+            background-color: darkred;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome, <?php echo $_SESSION['name']; ?>!</h1>
-        <div class="user-info">
-            <a href="logout.php">Logout</a>
-        </div>
-    </header>
+        </header>
+       
+   
 
     <nav class="navbar">
-        <a href="seeker.php">Home</a>
+        <a href="seeker.php">Profile</a>
         <a href="seekerprofile.php">Available Services</a>
         <a href="booked_services.php">Booked Services</a>
+        <div class="logout-btn">
+            <a href="logout.php">Logout</a>
+        </div>
     </nav>
 
     <main class="main-content">

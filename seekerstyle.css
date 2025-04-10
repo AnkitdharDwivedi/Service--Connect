@@ -3,9 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
 }
-/* Header */
+
 header {
-    background-color: pink;
+    background-color: #007bff;
     color: black;
     padding: 15px 20px;
     display: flex;
@@ -58,7 +58,7 @@ header .user-info a:hover {
     font-size: 20px;
     color: #555;
 }
-/* Main Content */
+
 .main-content {
     margin-left: 220px;
     padding: 20px;
@@ -96,7 +96,7 @@ header .user-info a:hover {
 .service-card button:hover {
     background-color: #0056b3;
 }
-/* Footer */
+
 footer {
     margin-top: 20px;
     text-align: center;

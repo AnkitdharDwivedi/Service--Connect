@@ -94,7 +94,7 @@ header nav ul li a.btn:hover {
 }
 
 
-.about h2, .services h2, .contact h2 {
+.about h2, .contact h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color:white
@@ -159,10 +159,12 @@ header nav ul li a.btn:hover {
     position: relative;
     top: 20px;
     left: 16px;
+    opacity: 0.5;
   }
   
   button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+  
   }
   
   .prev {
@@ -176,7 +178,7 @@ header nav ul li a.btn:hover {
 .services{
     background: linear-gradient(135deg,#007BFF,#56ab2f );
     border: 2px solid white;
-    opacity: 0.7;
+   
 }
 .contact{
     background: linear-gradient(135deg,#56ab2f, #007BFF );
@@ -186,14 +188,12 @@ header nav ul li a.btn:hover {
 
 .services .service-list {
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
     gap: 20px;
     justify-content: center;
    
 }
-.services .service-list:hover{
-    background-image: none;
-}
+
 
 .services .service-item {
     background: #f3f4f6;
@@ -202,7 +202,7 @@ header nav ul li a.btn:hover {
     flex: 1 1 calc(25% - 20px);
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+   
       color: black;
    
 }
@@ -211,34 +211,54 @@ header nav ul li a.btn:hover {
     box-shadow: #000;
     
     
+    
 }
+
 .services .service-item p{
     border-radius: 5px;
    color: black;
+   
   
 }
 .services #img1{
     background-image: url('elctrician.jpeg');
     background-size: cover;
     background-position: center;
-    opacity: 1;
+   
 
     
+}
+.services #img1:hover{
+     background-image: none;
+
 }
 .services #img2{
     background-image: url('download.jpeg');
     background-size: cover;
     background-position: center;
 }
+.services #img2:hover{
+    background-image: none;
+
+}
 .services #img3{
     background-image: url('plumber.jpeg');
     background-size: cover;
     background-position: center;
 }
+.services #img3:hover{
+    background-image: none;
+
+}
 .services #img4{
     background-image: url('securitygauard.jpeg');
     background-size: cover;
     background-position: center;
+}
+.services #img4:hover{
+    background-image: none;
+    visibility: visible;
+
 }
 
 .services .service-item h3 {
